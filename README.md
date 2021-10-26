@@ -1,5 +1,5 @@
 # songr
-Albums and songs can be viewed and new albums and songs can be added to specific albums using a web application.
+Albums and songs can be viewed and new albums and songs can be adding to specific albums using a web application.
 
 ## usage
 * you can clone my repo then
