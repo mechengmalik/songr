@@ -23,11 +23,13 @@ public class AlbumController {
     public String albums (Model model){
         List<Albums> albums = (List<Albums>) albumRepository.findAll();
         model.addAttribute("albums",albums);
-        return "albums";
+        return "albums.html";
+
     }
+
     @GetMapping("/addAlbum")
     public String viewAddAlbumForm(){
-        return "addAlbum";
+        return "addAlbum.html";
     }
 
 //    @PostMapping("/addAlbum")
