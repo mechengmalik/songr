@@ -4,7 +4,7 @@ import com.example.songr.Models.Albums;
 import com.example.songr.Models.Songs;
 import com.example.songr.Repository.SongRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.jpa.repository.support.SimpleJpaRepository;
+
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -36,7 +36,7 @@ public class SongController {
     public  String newSong(@PathVariable ("id") int id , Model model){
 
         model.addAttribute("albums",albumRepository.findById(id).get());
-        return ("albumDiscription.html");
+        return ("albumDescription.html");
     }
 
     @PostMapping("/addsong/{id}")
