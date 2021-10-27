@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Albums Details</title>
+</head>
+<body>
+
+<h1>Add a new Song to the Album</h1>
+<form action="'/addsong/'+ ${album.id}" method="POST">
+
+    <label for="title">Title:  <input type="text" name="title" id="title"> </label>
+    <br>
+    
+
+    <label for="length">Length is seconds:<input type="number" name="length" id="length"> </label>
+    <br>
+
+    <label for="trackNumber">link for album image:<input type="number" name="trackNumber" id="trackNumber"> </label>
+    <br>
+    <input type="submit" value="Add">
+
+
+
+
+</form>
+
+</body>
+</html>
